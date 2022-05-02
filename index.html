@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Validation form</title>
+</head>
+
+<body>
+
+    <div class="validation">
+        <form action="">
+            <h2>Validation form</h2>
+            <input type="text" placeholder="Your name" data-name data-focus>
+            <span class="name-error">This field is required</span>
+            <input type="email" data-email placeholder="Email">
+            <span class="email-error">This field is required</span>
+            <input type="text" placeholder="Country" data-country data-focus>
+            <span class="country-error">This field is required</span>
+            <input type="number" data-zip-code placeholder="Zip Code" data-focus>
+            <span class="zip-error">This field is required</span>
+
+
+            <div class="pass">
+                <input type="password" placeholder="Password" data-pass="">
+                <i class="far fa-eye"></i>
+            </div>
+            <span class="pass-error">This field is required</span>
+            <div class="checking" data-display="true">
+                <ul>
+                    <li class="lower">One lowercase character</li>
+                    <li class="upper" >One uppercase character</li>
+                    <li class="one-number" >One number</li>
+                </ul>
+                <ul>
+                    <li class="special" >One special character</li>
+                    <li class="eight" >8 characters minimum</li>
+                </ul>
+            </div>
+            <div class="all-set" data-set-display="false">
+                <i class="fas fa-check-circle"></i>
+                <p>Your password is secure and you're all set!</p>
+            </div>
+            <div class="pass" data-conf-pass>
+                <input type="password" placeholder="Confirm Password" data-confirm>
+                <i class="far fa-eye"></i>
+                
+            </div>
+            
+            <span class="confirm-error">This field is required</span>
+
+        </form>
+        <div data-submit class="btn">
+            <span>Check</span>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

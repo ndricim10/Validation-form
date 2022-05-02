@@ -1,0 +1,128 @@
+.validation {
+  display: flex;
+  min-height: 100vh;
+  height: max-content;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  background: #B993D6;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #8CA6DB, #B993D6);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #8CA6DB, #B993D6);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.validation span:not(.btn span) {
+  color: red;
+  font-size: 1.1rem;
+}
+.validation .name-error,
+.validation .email-error,
+.validation .country-error,
+.validation .zip-error,
+.validation .pass-error,
+.validation .confirm-error {
+  display: none;
+}
+.validation .red-border {
+  border: 1px red solid;
+}
+.validation .green-border {
+  border: 3px green solid;
+}
+.validation .btn {
+  width: 150px;
+  background-color: chocolate;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  font-weight: 900;
+}
+.validation .btn:hover {
+  color: chocolate;
+  background-color: white;
+  border: 1px chocolate solid;
+}
+.validation form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 60vw;
+}
+.validation form .pass {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+}
+.validation form .pass i {
+  font-size: 1.2rem;
+  padding-right: 1rem;
+  cursor: pointer;
+}
+.validation form .pass i:hover {
+  color: chocolate;
+}
+.validation form .pass input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.validation form .checking[data-display=false] {
+  display: flex;
+}
+.validation form .checking[data-display=false] li {
+  color: brown;
+}
+.validation form .checking[data-display=true] {
+  display: none;
+}
+.validation form .all-set[data-set-display=true] {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-inline: 1rem;
+  background-color: chocolate;
+  height: 40px;
+}
+.validation form .all-set[data-set-display=true] i {
+  color: white;
+  font-size: 1.2rem;
+}
+.validation form .all-set[data-set-display=true] p {
+  color: white;
+  font-weight: 900;
+}
+.validation form .all-set[data-set-display=false] {
+  display: none;
+}
+.validation form h2 {
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.validation form input {
+  height: 30px;
+  border: transparent;
+  outline: transparent;
+  padding-inline: 1rem;
+}
+.validation form input::-webkit-input-placeholder {
+  /* Edge */
+  padding-inline: 1rem;
+}
+.validation form input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  padding-inline: 1rem;
+}
+.validation form input::placeholder {
+  padding-inline: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
